@@ -156,7 +156,7 @@ def main():
 
     feature = lasagne.layers.get_output(output_layer)
     f = gzip.open(saveParamName, 'rb')
-    params, plotParam = cPickle.load(f)
+    params = cPickle.load(f)
     f.close()
     lasagne.layers.set_all_param_values(output_layer, params)
     data = get_PicPathNameList('./image')
