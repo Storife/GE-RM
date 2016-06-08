@@ -9,7 +9,6 @@ import theano.tensor as T
 import time
 import itertools
 import numpy as np
-import h5py
 import cPickle
 import gzip
 import glob
